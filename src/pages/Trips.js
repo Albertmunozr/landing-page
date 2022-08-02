@@ -1,4 +1,6 @@
 import React from "react";
+import city_02 from "../assets/city-02.jpg";
+import city_03 from "../assets/city-03.jpg";
 import Slider from "../components/Slider";
 
 const trips = () => {
