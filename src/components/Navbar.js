@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import "./Navbar.css";
+import { NavLink } from "react-router-dom";
 
 const Navbar = ({ navbarLinks }) => {
   const [menuClicked, setMenuClicked] = useState(false);
@@ -27,9 +28,9 @@ const Navbar = ({ navbarLinks }) => {
         {navbarLinks.map((item) => {
           return (
             <li className="navbar__item" key={item.title}>
-              <a className="navbar__link" href={item.url}>
+              <NavLink to={item.url} className="navbar__link">
                 {item.title}
-              </a>
+              </NavLink>
             </li>
           );
         })}

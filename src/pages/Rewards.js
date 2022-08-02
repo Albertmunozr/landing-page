@@ -1,11 +1,11 @@
 import React from "react";
-import city_01 from "../assets/city-01.jpg";
+import city_07 from "../assets/city-07.jpg";
 import Hero from "../components/Hero";
 
 const rewards = () => {
   return (
-    <div>
-      <Hero imageSrc={city_01} />
+    <div className="rewards">
+      <Hero imageSrc={city_07} />
     </div>
   );
 };

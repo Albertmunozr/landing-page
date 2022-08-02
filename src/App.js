@@ -1,37 +1,29 @@
 import "./App.css";
-import city_01 from "./assets/city-01.jpg";
-import city_02 from "./assets/city-02.jpg";
-import city_03 from "./assets/city-03.jpg";
-import Hero from "./components/Hero";
-import Slider from "./components/Slider";
 import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
 import Rewards from "./pages/Rewards";
 import Trips from "./pages/Trips";
+import Error404 from "./pages/Error404";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 const navbarLinks = [
-  { url: "#", title: "Home" },
-  { url: "#", title: "Trips" },
-  { url: "#", title: "Rewards" },
+  { url: "/", title: "Home" },
+  { url: "/trips", title: "Trips" },
+  { url: "/rewards", title: "Rewards" },
 ];
 
 function App() {
   return (
     <div className="App">
-      <Navbar navbarLinks={navbarLinks} />
-      <Hero imageSrc={city_01} />
-      <Slider
-        imageSrc={city_02}
-        title={"Be an explorer!"}
-        subtitle={
-          "Our platform offers a wide variety of unique travel locations!"
-        }
-      />
-      <Slider
-        imageSrc={city_03}
-        title={"Memories for a lifetime!"}
-        subtitle={"Your dream city is only a few clicks away."}
-        flipped={true}
-      />
+      <BrowserRouter>
+        <Navbar navbarLinks={navbarLinks} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/trips" element={<Trips />} />
+          <Route path="/rewards" element={<Rewards />} />
+          <Route path="*" element={<Error404 />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

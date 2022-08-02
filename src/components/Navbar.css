@@ -40,7 +40,8 @@
   transition: 250ms;
 }
 
-.navbar__link:hover {
+.navbar__link:hover,
+.active {
   border-color: white;
   transition: 250ms;
 }
