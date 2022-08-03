@@ -28,7 +28,11 @@ const Navbar = ({ navbarLinks }) => {
         {navbarLinks.map((item) => {
           return (
             <li className="navbar__item" key={item.title}>
-              <NavLink to={item.url} className="navbar__link">
+              <NavLink
+                to={item.url}
+                className="navbar__link"
+                onClick={menuClicked ? toggleMenuClick : null}
+              >
                 {item.title}
               </NavLink>
             </li>
