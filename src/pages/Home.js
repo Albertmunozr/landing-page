@@ -11,15 +11,17 @@ const Home = () => {
       <Hero imageSrc={city_01} />
       <Slider
         imageSrc={city_02}
-        title={"Be an explorer!"}
+        title={"Lorem ipsum dolor sit amet."}
         subtitle={
-          "Our platform offers a wide variety of unique travel locations!"
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porttitor."
         }
       />
       <Slider
         imageSrc={city_03}
-        title={"Memories for a lifetime!"}
-        subtitle={"Your dream city is only a few clicks away."}
+        title={"Lorem ipsum dolor sit amet."}
+        subtitle={
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porttitor."
+        }
         flipped={true}
       />
     </div>

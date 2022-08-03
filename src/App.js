@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Rewards from "./pages/Rewards";
 import Trips from "./pages/Trips";
 import Error404 from "./pages/Error404";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const navbarLinks = [
   { url: "/", title: "Home" },

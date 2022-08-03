@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import "./Navbar.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 const Navbar = ({ navbarLinks }) => {
   const [menuClicked, setMenuClicked] = useState(false);
@@ -12,7 +12,9 @@ const Navbar = ({ navbarLinks }) => {
 
   return (
     <nav className="navbar">
-      <span className="navbar__logo">Cities</span>
+      <Link className="navbar__logo--link" to="/">
+        <span className="navbar__logo">Cities</span>
+      </Link>
 
       {menuClicked ? (
         <FiX size={25} className="navbar__menu" onClick={toggleMenuClick} />

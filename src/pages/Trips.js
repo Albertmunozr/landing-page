@@ -9,21 +9,25 @@ const trips = () => {
     <div className="trips">
       <Slider
         imageSrc={city_04}
-        title={"Be an explorer!"}
+        title={"Lorem ipsum dolor sit amet."}
         subtitle={
-          "Our platform offers a wide variety of unique travel locations!"
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porttitor."
         }
       />
       <Slider
         imageSrc={city_05}
-        title={"Memories for a lifetime!"}
-        subtitle={"Your dream city is only a few clicks away."}
+        title={"Lorem ipsum dolor sit amet."}
+        subtitle={
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porttitor."
+        }
         flipped={true}
       />
       <Slider
         imageSrc={city_06}
-        title={"Memories for a lifetime!"}
-        subtitle={"Your dream city is only a few clicks away."}
+        title={"Lorem ipsum dolor sit amet."}
+        subtitle={
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porttitor."
+        }
       />
     </div>
   );

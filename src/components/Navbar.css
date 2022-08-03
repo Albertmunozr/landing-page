@@ -18,6 +18,10 @@
   font-size: 2.5rem;
 }
 
+.navbar__logo--link {
+  text-decoration: none;
+}
+
 .navbar__list {
   display: flex;
   list-style: none;
